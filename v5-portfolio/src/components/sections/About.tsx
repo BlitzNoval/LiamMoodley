@@ -29,10 +29,15 @@ export function About() {
           >
             MA by Research at Wits
           </a>
-          , where I&rsquo;m looking at how machine learning changes the way credit risk models need
-          to be validated and governed. Alongside that, I teach and tutor at the university, which
-          has made me spend a lot more time thinking about how to explain technical ideas clearly
-          rather than just make them work.
+          , titled{' '}
+          <em className="text-slate-300">
+            &ldquo;Traditional validation frameworks and machine learning in corporate credit
+            application scoring: implications for AI model risk governance&rdquo;
+          </em>
+          . It looks at how machine learning changes the way credit risk models need to be
+          validated and governed through the lens of AI. Alongside that, I teach and tutor at the
+          university, which has made me spend a lot more time thinking about how to explain
+          technical ideas clearly rather than just make them work.
         </p>
         <p className="mb-4">
           I also run <span className="font-medium text-slate-200">NIAEXE</span>, my interactive
@@ -55,7 +60,7 @@ export function About() {
           , where I&rsquo;ve worked across automation, machine learning, internal tools and AI
           products. I led the development of a RAG-based AI knowledge assistant, taking it from an
           early idea to a working Azure-based product that I eventually got to demo to industry
-          stakeholders in Cape Town.
+          stakeholders.
         </p>
         <p>
           Outside of work, I&rsquo;m really into art, playing violin, gaming both as a player and
