@@ -14,7 +14,6 @@ export const nav = [
 ];
 
 export const socials = [
-  { name: 'GitHub', href: 'https://github.com/bchiang7', icon: 'github' as const },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/bchiang7/', icon: 'linkedin' as const },
   { name: 'CodePen', href: 'https://codepen.io/bchiang7', icon: 'codepen' as const },
   { name: 'Instagram', href: 'https://instagram.com/bchiang7', icon: 'instagram' as const },
