@@ -14,12 +14,11 @@ export const nav = [
 ];
 
 export const socials = [
-  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/bchiang7/', icon: 'linkedin' as const },
-  { name: 'CodePen', href: 'https://codepen.io/bchiang7', icon: 'codepen' as const },
-  { name: 'Instagram', href: 'https://instagram.com/bchiang7', icon: 'instagram' as const },
+  { name: 'GitHub', href: 'https://github.com/BlitzNoval', icon: 'github' as const },
   {
-    name: 'Goodreads',
-    href: 'https://www.goodreads.com/user/show/143480747-brittany-chiang',
-    icon: 'goodreads' as const,
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/liammoodley/',
+    icon: 'linkedin' as const,
   },
+  { name: 'YouTube', href: 'https://www.youtube.com/@NinetyJL', icon: 'youtube' as const },
 ];
