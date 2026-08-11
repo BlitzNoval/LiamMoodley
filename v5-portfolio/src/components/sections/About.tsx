@@ -17,7 +17,7 @@ export function About() {
           I&rsquo;m a developer and researcher with a particular interest in UI/UX, prototyping,
           full-stack development, AI and fintech. I enjoy working across both the technical and
           creative sides of projects, especially when there&rsquo;s a complicated problem to
-          untangle, prototype and turn into something people can actually use.
+          untangle.
         </p>
         <p className="mb-4">
           Currently, I&rsquo;m completing an{' '}
