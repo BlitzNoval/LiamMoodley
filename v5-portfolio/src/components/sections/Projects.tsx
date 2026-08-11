@@ -1,8 +1,13 @@
 import Image from 'next/image';
 import { projects } from '@/data/projects';
+import { asset } from '@/lib/paths';
 import { SectionHeading } from '../SectionHeading';
 import { TechPill } from '../TechPill';
-import { ArrowUpRightIcon, ArrowRightIcon, DownloadIcon } from '../icons';
+import { ArrowUpRightIcon, ArrowRightIcon, DownloadIcon, LinkIcon } from '../icons';
+
+function resolveHref(href: string): string {
+  return href.startsWith('/') ? asset(href) : href;
+}
 
 export function Projects() {
   return (
@@ -22,7 +27,7 @@ export function Projects() {
                   <h3>
                     <a
                       className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                      href={p.href}
+                      href={resolveHref(p.href)}
                       target="_blank"
                       rel="noreferrer noopener"
                       aria-label={`${p.title} (opens in a new tab)`}
@@ -40,6 +45,24 @@ export function Projects() {
                       {p.stat.icon === 'download' && <DownloadIcon className="mr-1 h-4 w-4" />}
                       <span>{p.stat.label}</span>
                     </div>
+                  )}
+                  {p.links && p.links.length > 0 && (
+                    <ul className="relative z-10 mt-2 flex flex-wrap" aria-label="Related links">
+                      {p.links.map((link) => (
+                        <li key={link.href} className="mr-4">
+                          <a
+                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                            href={resolveHref(link.href)}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            aria-label={`${p.title} — ${link.label} (opens in a new tab)`}
+                          >
+                            <LinkIcon className="mr-1 h-3 w-3" />
+                            <span>{link.label}</span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                   )}
                   {p.tech && (
                     <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
