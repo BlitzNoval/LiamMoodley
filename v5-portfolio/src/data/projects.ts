@@ -56,7 +56,7 @@ export const projects: Project[] = [
     title: 'Absa Home Loan — Design Project',
     href: 'https://www.figma.com/design/JqpyjAPbojUNQFsfZCcdzZ/Liam_Moodley_Absa_HomeLoan?node-id=0-1&p=f&t=bohIr6tSyJwobz0C-0',
     description:
-      'Concept design for an Absa Home Loan application experience. Focus on flow, clarity and progressive disclosure across a multi-step application, translating a dense financial product into an interface a first-time applicant can actually work through.',
+      'Concept design for an Absa Home Loan application experience. Focus on flow, clarity and progressive user access across a multi-step financial app.',
     image: '/images/projects/absa.png',
     imageAlt: 'Absa Home Loan design project preview',
     tech: ['UX', 'UI', 'Interface Design', 'Figma'],
