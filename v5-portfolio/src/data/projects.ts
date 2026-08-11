@@ -11,7 +11,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'Skewed Lenses — Dyslexia Detection',
+    title: 'Skewed Lenses — GAI Dyslexia Detection',
     href: 'https://skewed-lenses.vercel.app/',
     description:
       'Research-driven web application that explores how visual perception patterns can help detect dyslexia, built as an interactive Gen AI experience.',
