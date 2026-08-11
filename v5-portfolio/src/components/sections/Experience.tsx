@@ -1,4 +1,5 @@
 import { experience } from '@/data/experience';
+import { asset } from '@/lib/paths';
 import { SectionHeading } from '../SectionHeading';
 import { TechPill } from '../TechPill';
 import { ArrowUpRightIcon, LinkIcon } from '../icons';
@@ -89,7 +90,7 @@ export function Experience() {
         <div className="mt-12">
           <a
             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold group/link text-base"
-            href="/resume.pdf"
+            href={asset('/resume.pdf')}
             target="_blank"
             rel="noreferrer noopener"
             aria-label="View Full Résumé (opens in a new tab)"

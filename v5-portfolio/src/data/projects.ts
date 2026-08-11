@@ -10,36 +10,39 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'Build a Spotify Connected App',
-    href: 'https://www.newline.co/courses/build-a-spotify-connected-app',
+    title: 'Skewed Lenses — Dyslexia Detection',
+    href: '#',
     description:
-      'Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.',
-    image: '/images/projects/course-card.png',
-    imageAlt: 'Build a Spotify Connected App Newline course marketing card',
+      'Research-driven tool exploring how visual perception patterns can be used to help detect dyslexia. Built as an interactive experience that guides the user through calibration tasks and surfaces indicators worth flagging for follow-up.',
+    image: '/images/projects/skewed-lenses.png',
+    imageAlt: 'Skewed Lenses dyslexia detection project preview',
+    tech: ['Research', 'Interactive Media', 'Accessibility'],
   },
   {
-    title: 'Spotify Profile',
-    href: 'https://spotify-profile.herokuapp.com/',
+    title: 'Subtrakt — Subscription Tracking App',
+    href: '#',
     description:
-      'Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-    image: '/images/projects/spotify-profile.png',
-    imageAlt: 'Spotify Profile app homepage',
-    tech: ['React', 'Express', 'Spotify API', 'Heroku'],
+      'Mobile-friendly app for tracking recurring subscriptions in one place. Surfaces upcoming charges, total monthly spend, and price changes so people actually notice what they are being billed for.',
+    image: '/images/projects/subtrakt.png',
+    imageAlt: 'Subtrakt subscription tracking app preview',
+    tech: ['React', 'TypeScript', 'UI/UX'],
   },
   {
-    title: 'Halcyon Theme',
-    href: 'https://halcyon-theme.netlify.app/',
-    description: 'Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.',
-    image: '/images/projects/halcyon.png',
-    imageAlt: 'Halcyon Theme homepage hero with screenshot of VS Code editor',
-    stat: { label: '100k+ Installs', icon: 'download' },
+    title: 'Buquoy — Brand Book',
+    href: '#',
+    description:
+      'Full brand book for Buquoy: identity, typography system, colour palette, voice, and application guidelines. Built to give the team a single reference for keeping the brand consistent across surfaces.',
+    image: '/images/projects/buquoy.png',
+    imageAlt: 'Buquoy brand book cover',
+    tech: ['Brand Design', 'Identity', 'Typography'],
   },
   {
-    title: 'brittanychiang.com (v4)',
-    href: 'https://v4.brittanychiang.com/',
-    description: 'An old portfolio site built with Gatsby with 6k+ stars and 3k+ forks',
-    image: '/images/projects/v4.png',
-    imageAlt: 'brittanychiang.com version 4 hero section',
-    tech: ['Gatsby', 'Styled Components', 'Netlify'],
+    title: 'Cohort — LMS in Google Apps Script',
+    href: '#',
+    description:
+      'Lightweight Learning Management System built entirely inside the Google Workspace ecosystem using Apps Script. Handles course structure, assignments, and student progress without needing external hosting.',
+    image: '/images/projects/cohort.png',
+    imageAlt: 'Cohort LMS project preview',
+    tech: ['Google Apps Script', 'JavaScript', 'Education'],
   },
 ];
