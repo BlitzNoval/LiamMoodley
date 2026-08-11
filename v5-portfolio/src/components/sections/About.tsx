@@ -13,10 +13,10 @@ export function About() {
       <div>
         <p className="mb-4">
           Hi there! I&rsquo;m Liam, and I like building things, with access for everyone at heart.
-          I&rsquo;m a developer and researcher with a particular interest in AI, machine learning,
-          fintech, and the way technology actually gets used in the real world (aka governance). I
-          enjoy working across both the technical and creative sides of projects, especially when
-          there&rsquo;s a complicated problem to untangle and turn into something useful.
+          I&rsquo;m a developer and researcher with a particular interest in AI, UI/UX, fintech,
+          and interactive web development. I enjoy working across both the technical and creative
+          sides of projects, especially when there&rsquo;s a complicated problem to untangle and
+          turn into something useful.
         </p>
         <p className="mb-4">
           Currently, I&rsquo;m completing an{' '}
@@ -64,8 +64,7 @@ export function About() {
         </p>
         <p>
           Outside of work, I&rsquo;m really into art, playing violin, gaming both as a player and
-          developer, and sports like ultimate frisbee. Those interests are a big part of how I
-          think about creativity, interaction and the kinds of experiences I enjoy making.
+          developer, and sports like ultimate frisbee and hiking.
         </p>
       </div>
     </section>
