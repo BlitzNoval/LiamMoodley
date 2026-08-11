@@ -57,12 +57,6 @@ export function About() {
           early idea to a working Azure-based product that I eventually got to demo to industry
           stakeholders in Cape Town.
         </p>
-        <p className="mb-4">
-          Across my work, I&rsquo;ve built with React, Python, JavaScript, C# and Azure, alongside
-          projects involving automation, data, AI systems, games and user-facing applications.
-          I&rsquo;m especially drawn to work where software, design and emerging technology
-          overlap, and where what gets built has consequences beyond just looking good on a screen.
-        </p>
         <p>
           Outside of work, I&rsquo;m really into art, playing violin, gaming both as a player and
           developer, and sports like ultimate frisbee. Those interests are a big part of how I
