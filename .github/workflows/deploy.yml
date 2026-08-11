@@ -45,7 +45,6 @@ jobs:
       - name: Build with Gatsby
         run: npx gatsby build --prefix-paths
         env:
-          NODE_OPTIONS: --openssl-legacy-provider
           GATSBY_CPU_COUNT: '2'
 
       - name: Disable Jekyll
