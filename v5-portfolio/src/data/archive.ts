@@ -19,7 +19,7 @@ export const archive: Archived[] = [
     year: '2025',
     title: 'Subtrakt — Subscription Tracking App',
     tech: ['React', 'TypeScript', 'UI/UX', 'Figma'],
-    href: 'https://www.figma.com/community/file/1512157818958257619/subtrakt-app',
+    href: 'https://www.figma.com/design/3YW2fEunvcTjelUyutu3tf/Subtrakt-App--Community-?node-id=13-315&p=f&t=BRYiI7UBTWI4M7Ki-0',
     linkLabel: 'figma.com',
   },
   {

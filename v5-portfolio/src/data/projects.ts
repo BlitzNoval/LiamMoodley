@@ -25,7 +25,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Subtrakt — Subscription Tracking App',
-    href: 'https://www.figma.com/community/file/1512157818958257619/subtrakt-app',
+    href: 'https://www.figma.com/design/3YW2fEunvcTjelUyutu3tf/Subtrakt-App--Community-?node-id=13-315&p=f&t=BRYiI7UBTWI4M7Ki-0',
     description:
       'Mobile-friendly app for tracking recurring subscriptions in one place. Surfaces upcoming charges, total monthly spend, and price changes so people actually notice what they are being billed for.',
     image: '/images/projects/subtrakt.png',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     links: [
       {
         label: 'Figma Community',
-        href: 'https://www.figma.com/community/file/1512157818958257619/subtrakt-app',
+        href: 'https://www.figma.com/design/3YW2fEunvcTjelUyutu3tf/Subtrakt-App--Community-?node-id=13-315&p=f&t=BRYiI7UBTWI4M7Ki-0',
       },
       {
         label: 'GitHub',
