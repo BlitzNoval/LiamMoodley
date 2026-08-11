@@ -77,7 +77,7 @@ export function Projects() {
                           <li className="mr-4">
                             <div className="mt-2 inline-flex items-center text-sm font-medium text-slate-300">
                               {StatIcon ? (
-                                <StatIcon className="mr-1 h-4 w-4" />
+                                <StatIcon className="mr-1 h-3 w-3" />
                               ) : (
                                 <span className="mr-1" aria-hidden="true">
                                   ★
