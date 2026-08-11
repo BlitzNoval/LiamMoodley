@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: 'Skewed Lenses — Dyslexia Detection',
     href: 'https://skewed-lenses.vercel.app/',
     description:
-      'Research-driven web application that explores how visual perception patterns can help detect dyslexia. Built as an interactive experience that guides the user through calibration tasks and surfaces indicators worth flagging for follow-up.',
+      'Research-driven web application that explores how visual perception patterns can help detect dyslexia, built as an interactive Gen AI experience.',
     image: '/images/projects/skewed-lenses.png',
     imageAlt: 'Skewed Lenses dyslexia detection project preview',
     tech: ['React', 'Next.js', 'AI', 'Accessibility'],
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     title: 'Buquoy — Brand Book',
     href: '/buquoy-brand-guide.pdf',
     description:
-      'Full brand book for Buquoy: identity, typography system, colour palette, voice, and application guidelines. Built to give the team a single reference for keeping the brand consistent across surfaces.',
+      'Full brand book for Buquoy: identity, typography system, colour palette, voice, and application guidelines.',
     image: '/images/projects/buquoy.png',
     imageAlt: 'Buquoy brand book cover',
     tech: ['Brand Design', 'Identity', 'Typography'],
