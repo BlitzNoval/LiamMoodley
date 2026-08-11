@@ -1,7 +1,7 @@
 export const site = {
   name: 'Liam Moodley',
   title: 'Developer & Researcher',
-  tagline: 'I build intelligent systems designed around people.',
+  tagline: 'I build accessible, intelligent systems designed around people.',
   description:
     'Liam Moodley is a developer and researcher working across AI, machine learning, fintech, and human-centred software.',
   resumeUrl: '/resume.pdf',
