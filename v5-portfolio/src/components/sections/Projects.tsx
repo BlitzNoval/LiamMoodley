@@ -55,24 +55,9 @@ export function Projects() {
                     </a>
                   </h3>
                   <p className="mt-2 text-sm leading-normal">{p.description}</p>
-                  {p.stat && (() => {
-                    const StatIcon = statIcons[p.stat.icon];
-                    return (
-                      <div className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300">
-                        {StatIcon ? (
-                          <StatIcon className="mr-1 h-4 w-4" />
-                        ) : (
-                          <span className="mr-1" aria-hidden="true">
-                            ★
-                          </span>
-                        )}
-                        <span>{p.stat.label}</span>
-                      </div>
-                    );
-                  })()}
-                  {p.links && p.links.length > 0 && (
-                    <ul className="relative z-10 mt-2 flex flex-wrap" aria-label="Related links">
-                      {p.links.map((link) => (
+                  {((p.links && p.links.length > 0) || p.stat) && (
+                    <ul className="relative z-10 mt-2 flex flex-wrap items-center" aria-label="Related links">
+                      {p.links?.map((link) => (
                         <li key={link.href} className="mr-4">
                           <a
                             className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
@@ -86,6 +71,23 @@ export function Projects() {
                           </a>
                         </li>
                       ))}
+                      {p.stat && (() => {
+                        const StatIcon = statIcons[p.stat.icon];
+                        return (
+                          <li className="mr-4">
+                            <div className="mt-2 inline-flex items-center text-sm font-medium text-slate-300">
+                              {StatIcon ? (
+                                <StatIcon className="mr-1 h-4 w-4" />
+                              ) : (
+                                <span className="mr-1" aria-hidden="true">
+                                  ★
+                                </span>
+                              )}
+                              <span>{p.stat.label}</span>
+                            </div>
+                          </li>
+                        );
+                      })()}
                     </ul>
                   )}
                   {p.tech && (
