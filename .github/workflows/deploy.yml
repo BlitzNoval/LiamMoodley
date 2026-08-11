@@ -40,7 +40,7 @@ jobs:
             gatsby-${{ runner.os }}-
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile --ignore-scripts
 
       - name: Build with Gatsby
         run: npx gatsby build --prefix-paths
