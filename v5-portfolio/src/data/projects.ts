@@ -43,7 +43,7 @@ export const projects: Project[] = [
     image: '/images/projects/skewed-lenses.png',
     imageAlt: 'Skewed Lenses dyslexia detection project preview',
     tech: ['React', 'Next.js', 'AI', 'Accessibility'],
-    stat: { label: '14 Shares', icon: 'share' },
+    stat: { label: '14', icon: 'share' },
     links: [
       { label: 'Live Site', href: 'https://skewed-lenses.vercel.app/' },
       { label: 'GitHub', href: 'https://github.com/BlitzNoval/Web-Application-AI-Bias-Detector' },
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     image: '/images/projects/subtrakt.png',
     imageAlt: 'Subtrakt subscription tracking app preview',
     tech: ['React', 'TypeScript', 'UI/UX', 'Figma'],
-    stat: { label: '25 Views', icon: 'eye' },
+    stat: { label: '25', icon: 'eye' },
     links: [
       {
         label: 'Figma Community',
