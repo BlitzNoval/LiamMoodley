@@ -40,12 +40,11 @@ jobs:
             gatsby-${{ runner.os }}-
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --ignore-scripts
+        run: yarn install --frozen-lockfile
 
       - name: Build with Gatsby
         run: npx gatsby build --prefix-paths
         env:
-          NODE_OPTIONS: --openssl-legacy-provider
           GATSBY_CPU_COUNT: '2'
 
       - name: Disable Jekyll
