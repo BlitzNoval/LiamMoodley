@@ -49,7 +49,7 @@ export const projects: Project[] = [
       'Full brand book for Buquoy: identity, typography system, colour palette, voice, and application guidelines.',
     image: '/images/projects/buquoy.png',
     imageAlt: 'Buquoy brand book cover',
-    tech: ['Brand Design', 'Identity', 'Typography'],
+    tech: ['Brand Design', 'Identity', 'Typography', 'UX'],
     links: [{ label: 'Brand Guide (PDF)', href: '/buquoy-brand-guide.pdf' }],
   },
   {

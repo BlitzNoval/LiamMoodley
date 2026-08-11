@@ -25,7 +25,7 @@ export const archive: Archived[] = [
   {
     year: '2025',
     title: 'Buquoy — Brand Book',
-    tech: ['Brand Design', 'Identity', 'Typography'],
+    tech: ['Brand Design', 'Identity', 'Typography', 'UX'],
     href: '/buquoy-brand-guide.pdf',
     linkLabel: 'Brand Guide (PDF)',
   },
