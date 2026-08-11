@@ -4,7 +4,21 @@ import { projects } from '@/data/projects';
 import { asset } from '@/lib/paths';
 import { SectionHeading } from '../SectionHeading';
 import { TechPill } from '../TechPill';
-import { ArrowUpRightIcon, ArrowRightIcon, DownloadIcon, LinkIcon } from '../icons';
+import {
+  ArrowUpRightIcon,
+  ArrowRightIcon,
+  DownloadIcon,
+  EyeIcon,
+  LinkIcon,
+  ShareIcon,
+} from '../icons';
+
+const statIcons = {
+  download: DownloadIcon,
+  eye: EyeIcon,
+  share: ShareIcon,
+  star: null,
+} as const;
 
 function resolveHref(href: string): string {
   return href.startsWith('/') ? asset(href) : href;
@@ -41,12 +55,21 @@ export function Projects() {
                     </a>
                   </h3>
                   <p className="mt-2 text-sm leading-normal">{p.description}</p>
-                  {p.stat && (
-                    <div className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300">
-                      {p.stat.icon === 'download' && <DownloadIcon className="mr-1 h-4 w-4" />}
-                      <span>{p.stat.label}</span>
-                    </div>
-                  )}
+                  {p.stat && (() => {
+                    const StatIcon = statIcons[p.stat.icon];
+                    return (
+                      <div className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300">
+                        {StatIcon ? (
+                          <StatIcon className="mr-1 h-4 w-4" />
+                        ) : (
+                          <span className="mr-1" aria-hidden="true">
+                            ★
+                          </span>
+                        )}
+                        <span>{p.stat.label}</span>
+                      </div>
+                    );
+                  })()}
                   {p.links && p.links.length > 0 && (
                     <ul className="relative z-10 mt-2 flex flex-wrap" aria-label="Related links">
                       {p.links.map((link) => (
