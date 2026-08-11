@@ -23,11 +23,18 @@ export const archive: Archived[] = [
     linkLabel: 'figma.com',
   },
   {
-    year: '2025',
+    year: '2026',
     title: 'Buquoy — Brand Book',
     tech: ['Brand Design', 'Identity', 'Typography', 'UX'],
     href: '/buquoy-brand-guide.pdf',
     linkLabel: 'Brand Guide (PDF)',
+  },
+  {
+    year: '2024',
+    title: 'Absa Home Loan — Design Project',
+    tech: ['UX', 'UI', 'Interface Design', 'Figma'],
+    href: 'https://www.figma.com/design/JqpyjAPbojUNQFsfZCcdzZ/Liam_Moodley_Absa_HomeLoan?node-id=0-1&p=f&t=bohIr6tSyJwobz0C-0',
+    linkLabel: 'figma.com',
   },
   {
     year: '2024',
