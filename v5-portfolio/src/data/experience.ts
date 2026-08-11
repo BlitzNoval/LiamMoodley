@@ -29,7 +29,7 @@ export const experience: Job[] = [
     href: 'https://gaiclab.co.za/profile/12',
     description:
       'Teach and support undergraduate Digital Arts students across interactive media and theory courses. Help students work through technical and conceptual problems, provide feedback on projects, and translate complex ideas across programming, design, interactive media, and academic research.',
-    tech: ['C#', 'Unity', 'Interactive Media', 'Teaching', 'Research'],
+    tech: ['Coding', 'React', 'JavaScript', "API's", 'Technology Philosophy'],
   },
   {
     range: 'Jul 2025 — Aug 2026',
