@@ -10,12 +10,23 @@ export const metadata: Metadata = {
   title: site.name,
   description: site.description,
   metadataBase: new URL('https://blitznoval.github.io/LiamMoodley'),
+  icons: {
+    icon: [{ url: './favicon.webp', type: 'image/webp' }],
+    shortcut: './favicon.webp',
+    apple: './favicon.webp',
+  },
   openGraph: {
     title: site.name,
     description: site.description,
     type: 'website',
+    images: ['./favicon.webp'],
   },
-  twitter: { card: 'summary_large_image', title: site.name, description: site.description },
+  twitter: {
+    card: 'summary',
+    title: site.name,
+    description: site.description,
+    images: ['./favicon.webp'],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
