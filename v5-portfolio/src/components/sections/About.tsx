@@ -1,5 +1,4 @@
 import { SectionHeading } from '../SectionHeading';
-import { Korok } from '../Korok';
 
 const linkClass = 'font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300';
 
@@ -13,86 +12,54 @@ export function About() {
       <SectionHeading id="about-heading" label="About" />
       <div>
         <p className="mb-4">
-          Hi there! I&apos;m Brittany, and I like building things. I&apos;m a frontend engineer with
-          expertise in crafting accessible, pixel-perfect user interfaces. I take pride in creating
-          thoughtful, inclusive products and have a sharp eye for the little details that separate
-          a good product from an exceptional one. I enjoy working most at the intersection of
-          design and engineering, where great user experience meets clean, scalable code.
+          Hi there! I&rsquo;m Liam, and I like building things, with access for everyone at heart.
+          I&rsquo;m a developer and researcher with a particular interest in AI, machine learning,
+          fintech, and the way technology actually gets used in the real world. I enjoy working
+          across both the technical and creative sides of projects, especially when there&rsquo;s a
+          complicated problem to untangle and turn into something useful.
         </p>
         <p className="mb-4">
-          Currently, I&apos;m a Senior Frontend Engineer at{' '}
+          Currently, I&rsquo;m completing an{' '}
           <a
             className={linkClass}
-            href="https://www.klaviyo.com/"
+            href="https://www.wits.ac.za/"
             target="_blank"
             rel="noreferrer noopener"
-            aria-label="Klaviyo (opens in a new tab)"
+            aria-label="University of the Witwatersrand (opens in a new tab)"
           >
-            Klaviyo
+            MA by Research at Wits
           </a>
-          , where I work on our design system and help build new products, like{' '}
-          <a
-            className={linkClass}
-            href="https://www.klaviyo.com/composer"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Composer (opens in a new tab)"
-          >
-            Composer
-          </a>
-          . I lead engineering efforts across our component library and front end platform,
-          partnering closely with designers and engineers to ensure accessibility is built into the
-          foundation of everything we ship.
+          , where I&rsquo;m looking at how machine learning changes the way credit risk models need
+          to be validated and governed. Alongside that, I teach and tutor at the university, which
+          has made me spend a lot more time thinking about how to explain technical ideas clearly
+          rather than just make them work.
         </p>
         <p className="mb-4">
-          Previously, I&rsquo;ve worked across a wide range of environments &mdash; from product
-          studios to startups and large tech companies &mdash; including{' '}
+          More recently, I worked as a Digital &amp; AI Intern at{' '}
           <a
             className={linkClass}
-            href="https://www.apple.com/apple-music/"
+            href="https://www.redflank.co.za/"
             target="_blank"
             rel="noreferrer noopener"
-            aria-label="Apple (opens in a new tab)"
+            aria-label="Redflank Consulting (opens in a new tab)"
           >
-            Apple
+            Redflank Consulting
           </a>
-          ,{' '}
-          <a
-            className={linkClass}
-            href="https://starry.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Starry Internet (opens in a new tab)"
-          >
-            Starry Internet
-          </a>
-          , and{' '}
-          <a
-            className={linkClass}
-            href="https://upstatement.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Upstatement (opens in a new tab)"
-          >
-            Upstatement
-          </a>
-          . Outside of my day-to-day work, I also created an{' '}
-          <a
-            className={linkClass}
-            href="https://www.newline.co/courses/build-a-spotify-connected-app"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="online video course (opens in a new tab)"
-          >
-            online video course
-          </a>{' '}
-          a few years ago which walks through building a real-world, API-driven application from
-          scratch. These experiences have shaped how I think about building products that are both
-          well-crafted and widely usable.
+          , where I got to work across automation, machine learning, internal tools, and AI
+          products. My flagship project was building an AI knowledge assistant, which went from an
+          early idea to a working Azure-based product that I eventually got to demo to industry
+          stakeholders in Cape Town.
+        </p>
+        <p className="mb-4">
+          Across my work, I&rsquo;ve built with React, Python, Unity, C# and Azure, alongside
+          projects involving automation, data, AI systems and user-facing applications. I&rsquo;m
+          especially drawn to work where software, design and emerging technology overlap, and
+          where what gets built has consequences beyond just looking good on a screen.
         </p>
         <p>
-          In my spare time, you can usually find me climbing, playing tennis, hanging out with my
-          wife and two cats, or running around Hyrule searching for <Korok />.
+          Outside of work, I&rsquo;m really into art, playing violin, gaming both as a player and
+          developer, and sports like ultimate frisbee and hiking. Those interests are a big part of
+          how I think about creativity, interaction and the kinds of experiences I enjoy making.
         </p>
       </div>
     </section>

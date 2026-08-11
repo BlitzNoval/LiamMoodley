@@ -10,19 +10,36 @@ export function Spotlight() {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     let raf = 0;
-    const onMove = (e: MouseEvent) => {
-      if (raf) return;
-      raf = requestAnimationFrame(() => {
-        raf = 0;
-        const el = ref.current;
-        if (!el) return;
-        el.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
-      });
+    let x = 0;
+    let y = 0;
+
+    const paint = () => {
+      raf = 0;
+      const el = ref.current;
+      if (!el) return;
+      el.style.background = `radial-gradient(600px circle at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
     };
 
+    const schedule = () => {
+      if (raf) return;
+      raf = requestAnimationFrame(paint);
+    };
+
+    const onMove = (e: MouseEvent) => {
+      x = e.clientX;
+      y = e.clientY;
+      schedule();
+    };
+
+    // Scrolling doesn't fire mousemove but changes what's under the cursor.
+    // Repaint at the same viewport coords so the glow tracks the cursor.
+    const onScroll = () => schedule();
+
     window.addEventListener('mousemove', onMove);
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => {
       window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('scroll', onScroll);
       if (raf) cancelAnimationFrame(raf);
     };
   }, []);

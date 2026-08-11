@@ -1,9 +1,9 @@
 export const site = {
-  name: 'Brittany Chiang',
-  title: 'Frontend Engineer',
-  tagline: 'I build accessible, pixel-perfect experiences for the web.',
+  name: 'Liam Moodley',
+  title: 'Developer & Researcher',
+  tagline: 'I build intelligent systems designed around people.',
   description:
-    'Brittany Chiang is a software engineer who builds accessible, inclusive products and digital experiences for the web.',
+    'Liam Moodley is a developer and researcher working across AI, machine learning, fintech, and human-centred software.',
   resumeUrl: '/resume.pdf',
 };
 
