@@ -11,6 +11,31 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'Absa Home Loan — Design Project',
+    href: 'https://www.figma.com/design/JqpyjAPbojUNQFsfZCcdzZ/Liam_Moodley_Absa_HomeLoan?node-id=0-1&p=f&t=bohIr6tSyJwobz0C-0',
+    description:
+      'Concept design for an Absa Home Loan application experience. Focus on flow, clarity and progressive user access across a multi-step financial app.',
+    image: '/images/projects/absa.png',
+    imageAlt: 'Absa Home Loan design project preview',
+    tech: ['UX', 'UI', 'Interface Design', 'Figma'],
+    links: [
+      {
+        label: 'Figma File',
+        href: 'https://www.figma.com/design/JqpyjAPbojUNQFsfZCcdzZ/Liam_Moodley_Absa_HomeLoan?node-id=0-1&p=f&t=bohIr6tSyJwobz0C-0',
+      },
+    ],
+  },
+  {
+    title: 'Buquoy — Brand Book',
+    href: '/buquoy-brand-guide.pdf',
+    description:
+      'Full brand book for Buquoy: identity, typography system, colour palette, voice, and application guidelines.',
+    image: '/images/projects/buquoy.png',
+    imageAlt: 'Buquoy brand book cover',
+    tech: ['Brand Design', 'Identity', 'Typography', 'UX'],
+    links: [{ label: 'Brand Guide (PDF)', href: '/buquoy-brand-guide.pdf' }],
+  },
+  {
     title: 'Skewed Lenses — GAI Dyslexia Detection',
     href: 'https://skewed-lenses.vercel.app/',
     description:
@@ -39,46 +64,6 @@ export const projects: Project[] = [
       {
         label: 'GitHub',
         href: 'https://github.com/BlitzNoval/Application-Subtrakt-Subscription-Manager',
-      },
-    ],
-  },
-  {
-    title: 'Buquoy — Brand Book',
-    href: '/buquoy-brand-guide.pdf',
-    description:
-      'Full brand book for Buquoy: identity, typography system, colour palette, voice, and application guidelines.',
-    image: '/images/projects/buquoy.png',
-    imageAlt: 'Buquoy brand book cover',
-    tech: ['Brand Design', 'Identity', 'Typography', 'UX'],
-    links: [{ label: 'Brand Guide (PDF)', href: '/buquoy-brand-guide.pdf' }],
-  },
-  {
-    title: 'Absa Home Loan — Design Project',
-    href: 'https://www.figma.com/design/JqpyjAPbojUNQFsfZCcdzZ/Liam_Moodley_Absa_HomeLoan?node-id=0-1&p=f&t=bohIr6tSyJwobz0C-0',
-    description:
-      'Concept design for an Absa Home Loan application experience. Focus on flow, clarity and progressive user access across a multi-step financial app.',
-    image: '/images/projects/absa.png',
-    imageAlt: 'Absa Home Loan design project preview',
-    tech: ['UX', 'UI', 'Interface Design', 'Figma'],
-    links: [
-      {
-        label: 'Figma File',
-        href: 'https://www.figma.com/design/JqpyjAPbojUNQFsfZCcdzZ/Liam_Moodley_Absa_HomeLoan?node-id=0-1&p=f&t=bohIr6tSyJwobz0C-0',
-      },
-    ],
-  },
-  {
-    title: 'Cohort — LMS in Google Apps Script',
-    href: 'https://github.com/BlitzNoval/Learning-Management-System---Google-Apps-Script-',
-    description:
-      'Lightweight Learning Management System built entirely inside the Google Workspace ecosystem using Apps Script. Handles course structure, assignments, and student progress without needing external hosting.',
-    image: '/images/projects/cohort.png',
-    imageAlt: 'Cohort LMS project preview',
-    tech: ['Google Apps Script', 'JavaScript', 'Education'],
-    links: [
-      {
-        label: 'GitHub',
-        href: 'https://github.com/BlitzNoval/Learning-Management-System---Google-Apps-Script-',
       },
     ],
   },
