@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { projects } from '@/data/projects';
 import { asset } from '@/lib/paths';
 import { SectionHeading } from '../SectionHeading';
@@ -84,7 +85,7 @@ export function Projects() {
           ))}
         </ul>
         <div className="mt-12">
-          <a
+          <Link
             className="inline-flex items-center font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold group"
             aria-label="View Full Project Archive"
             href="/archive"
@@ -98,7 +99,7 @@ export function Projects() {
                 <ArrowRightIcon className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" />
               </span>
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

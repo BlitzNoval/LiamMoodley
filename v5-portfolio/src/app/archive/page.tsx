@@ -2,12 +2,17 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { archive } from '@/data/archive';
 import { site } from '@/data/site';
+import { asset } from '@/lib/paths';
 import { ArrowRightIcon, ArrowUpRightIcon, GithubIcon } from '@/components/icons';
 
 export const metadata: Metadata = {
   title: `Archive | ${site.name}`,
   description: site.description,
 };
+
+function resolveHref(href: string): string {
+  return href.startsWith('/') ? asset(href) : href;
+}
 
 export default function ArchivePage() {
   return (
@@ -25,9 +30,6 @@ export default function ArchivePage() {
           <tr>
             <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Year</th>
             <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Project</th>
-            <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">
-              Made at
-            </th>
             <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">
               Built with
             </th>
@@ -48,7 +50,7 @@ export default function ArchivePage() {
                     {row.href ? (
                       <a
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 group/link text-base"
-                        href={row.href}
+                        href={resolveHref(row.href)}
                         target="_blank"
                         rel="noreferrer noopener"
                         aria-label={`${row.title} (opens in a new tab)`}
@@ -64,9 +66,6 @@ export default function ArchivePage() {
                   </div>
                   <div className="hidden sm:block">{row.title}</div>
                 </div>
-              </td>
-              <td className="hidden py-4 pr-4 align-top text-sm lg:table-cell">
-                <div className="translate-y-px whitespace-nowrap">{row.madeAt ?? ''}</div>
               </td>
               <td className="hidden py-4 pr-4 align-top lg:table-cell">
                 <ul className="flex -translate-y-1.5 flex-wrap">
@@ -86,7 +85,7 @@ export default function ArchivePage() {
                       {row.githubOnly ? (
                         <a
                           className="flex items-center text-sm text-slate-400 hover:text-teal-300"
-                          href={row.href}
+                          href={resolveHref(row.href)}
                           target="_blank"
                           rel="noreferrer noopener"
                           aria-label="GitHub (opens in a new tab)"
@@ -97,7 +96,7 @@ export default function ArchivePage() {
                       ) : (
                         <a
                           className="inline-flex items-baseline font-medium leading-tight text-sm text-slate-400 hover:text-teal-300 group/link"
-                          href={row.href}
+                          href={resolveHref(row.href)}
                           target="_blank"
                           rel="noreferrer noopener"
                           aria-label={`${row.linkLabel ?? row.href} (opens in a new tab)`}
