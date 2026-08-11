@@ -11,21 +11,21 @@ export const metadata: Metadata = {
   description: site.description,
   metadataBase: new URL('https://blitznoval.github.io/LiamMoodley'),
   icons: {
-    icon: [{ url: './favicon.webp', type: 'image/webp' }],
-    shortcut: './favicon.webp',
-    apple: './favicon.webp',
+    icon: [{ url: './favicon.png', type: 'image/png' }],
+    shortcut: './favicon.png',
+    apple: './favicon.png',
   },
   openGraph: {
     title: site.name,
     description: site.description,
     type: 'website',
-    images: ['./favicon.webp'],
+    images: ['./favicon.png'],
   },
   twitter: {
     card: 'summary',
     title: site.name,
     description: site.description,
-    images: ['./favicon.webp'],
+    images: ['./favicon.png'],
   },
 };
 
