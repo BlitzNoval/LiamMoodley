@@ -14,7 +14,7 @@ export const experience: Job[] = [
   {
     range: 'May 2026 — Present',
     rangeLabel: 'May 2026 to Present',
-    title: 'Digital & AI Intern',
+    title: 'Digital and AI Solutions Engineer Intern',
     company: 'Redflank Consulting',
     href: 'https://www.redflank.com/',
     description:
@@ -34,7 +34,7 @@ export const experience: Job[] = [
   {
     range: 'Jul 2025 — Aug 2026',
     rangeLabel: 'July 2025 to August 2026',
-    title: 'Web Developer & SEO',
+    title: 'Web Developer',
     company: 'Fractional Agency',
     href: 'https://fractionalagency.co.za/',
     description:
@@ -44,7 +44,7 @@ export const experience: Job[] = [
   {
     range: 'Jan — Jul 2025',
     rangeLabel: 'January to July 2025',
-    title: 'UI/UX Redesign',
+    title: 'UI Engineer',
     company: 'CROW South Africa',
     href: 'https://crowkzn.co.za/',
     description:
@@ -54,7 +54,7 @@ export const experience: Job[] = [
   {
     range: '2023 — Present',
     rangeLabel: '2023 to Present',
-    title: 'Founder & Full-Stack Developer',
+    title: 'Full-Stack Developer',
     company: 'NIAEXE',
     description:
       'Design, build, and manage websites and digital platforms for organisations across healthcare, marketing, conservation, and youth development. Work across the full development process, from UI/UX and visual design through frontend development, backend functionality, deployment, and ongoing maintenance.',
