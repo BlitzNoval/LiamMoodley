@@ -48,7 +48,7 @@ export function Spotlight() {
     <div
       ref={ref}
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+      className="pointer-events-none fixed inset-0 z-30 transition duration-300"
       style={{
         background:
           'radial-gradient(600px circle at 0px 0px, rgba(29, 78, 216, 0.15), transparent 80%)',
