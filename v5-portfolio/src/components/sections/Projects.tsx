@@ -73,7 +73,7 @@ export function Projects() {
                   )}
                 </div>
                 <Image
-                  src={p.image}
+                  src={asset(p.image)}
                   alt={p.imageAlt}
                   width={400}
                   height={225}
