@@ -14,9 +14,9 @@ export function About() {
         <p className="mb-4">
           Hi there! I&rsquo;m Liam, and I like building things, with access for everyone at heart.
           I&rsquo;m a developer and researcher with a particular interest in AI, machine learning,
-          fintech, and the way technology actually gets used in the real world. I enjoy working
-          across both the technical and creative sides of projects, especially when there&rsquo;s a
-          complicated problem to untangle and turn into something useful.
+          fintech, and the way technology actually gets used in the real world (aka governance). I
+          enjoy working across both the technical and creative sides of projects, especially when
+          there&rsquo;s a complicated problem to untangle and turn into something useful.
         </p>
         <p className="mb-4">
           Currently, I&rsquo;m completing an{' '}
@@ -35,7 +35,14 @@ export function About() {
           rather than just make them work.
         </p>
         <p className="mb-4">
-          More recently, I worked as a Digital &amp; AI Intern at{' '}
+          I also run <span className="font-medium text-slate-200">NIAEXE</span>, my interactive
+          digital company, where I work across design and full-stack development to build websites
+          and digital experiences. Through NIAEXE, I&rsquo;ve built and managed digital platforms
+          for organisations across healthcare, marketing, conservation and youth development, while
+          giving myself a space to experiment with everything from UI/UX to web development.
+        </p>
+        <p className="mb-4">
+          I currently work as a Digital &amp; AI Intern at{' '}
           <a
             className={linkClass}
             href="https://www.redflank.co.za/"
@@ -45,21 +52,21 @@ export function About() {
           >
             Redflank Consulting
           </a>
-          , where I got to work across automation, machine learning, internal tools, and AI
-          products. My flagship project was building an AI knowledge assistant, which went from an
+          , where I&rsquo;ve worked across automation, machine learning, internal tools and AI
+          products. I led the development of a RAG-based AI knowledge assistant, taking it from an
           early idea to a working Azure-based product that I eventually got to demo to industry
           stakeholders in Cape Town.
         </p>
         <p className="mb-4">
-          Across my work, I&rsquo;ve built with React, Python, Unity, C# and Azure, alongside
-          projects involving automation, data, AI systems and user-facing applications. I&rsquo;m
-          especially drawn to work where software, design and emerging technology overlap, and
-          where what gets built has consequences beyond just looking good on a screen.
+          Across my work, I&rsquo;ve built with React, Python, JavaScript, C# and Azure, alongside
+          projects involving automation, data, AI systems, games and user-facing applications.
+          I&rsquo;m especially drawn to work where software, design and emerging technology
+          overlap, and where what gets built has consequences beyond just looking good on a screen.
         </p>
         <p>
           Outside of work, I&rsquo;m really into art, playing violin, gaming both as a player and
-          developer, and sports like ultimate frisbee and hiking. Those interests are a big part of
-          how I think about creativity, interaction and the kinds of experiences I enjoy making.
+          developer, and sports like ultimate frisbee. Those interests are a big part of how I
+          think about creativity, interaction and the kinds of experiences I enjoy making.
         </p>
       </div>
     </section>
