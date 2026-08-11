@@ -15,6 +15,7 @@ function resolveHref(href: string): string {
 }
 
 export default function ArchivePage() {
+  const rows = [...archive].sort((a, b) => Number(b.year) - Number(a.year));
   return (
     <div className="lg:py-24">
       <Link
@@ -39,7 +40,7 @@ export default function ArchivePage() {
           </tr>
         </thead>
         <tbody>
-          {archive.map((row, i) => (
+          {rows.map((row, i) => (
             <tr key={`${row.title}-${i}`} className="border-b border-slate-300/10 last:border-none">
               <td className="py-4 pr-4 align-top text-sm">
                 <div className="translate-y-px">{row.year}</div>
