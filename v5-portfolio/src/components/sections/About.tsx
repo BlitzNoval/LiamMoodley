@@ -30,9 +30,10 @@ export function About() {
           >
             MA by Research at Wits
           </a>
-          . Alongside that, I teach and tutor at the university, which has made me spend a lot more
-          time thinking about how to explain technical ideas clearly rather than just make them
-          work.
+          , looking at how banking systems can safely integrate AI into high-risk decisions across
+          both enterprise operations and everyday corporate use. Alongside that, I teach and tutor
+          at the university, which has made me spend a lot more time thinking about how to explain
+          technical ideas clearly rather than just make them work.
         </p>
         <p className="mb-4">
           I also run <span className="font-medium text-slate-200">NIAEXE</span>, my interactive
@@ -54,9 +55,7 @@ export function About() {
             Redflank Consulting
           </a>
           , where I&rsquo;ve worked across prototyping, system architecture, user interface design,
-          automation, machine learning and AI products. I led the development of a RAG-based AI
-          knowledge assistant, taking it from an early idea to a working Azure-based product that I
-          eventually got to demo to industry stakeholders.
+          automation, machine learning and AI products.
         </p>
         <p>
           Outside of work, I&rsquo;m really into art, playing violin, gaming both as a player and
