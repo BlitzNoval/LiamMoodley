@@ -31,6 +31,7 @@ export default function ArchivePage() {
           <tr>
             <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Year</th>
             <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Project</th>
+            <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Type of work</th>
             <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">
               Built with
             </th>
@@ -66,6 +67,11 @@ export default function ArchivePage() {
                     )}
                   </div>
                   <div className="hidden sm:block">{row.title}</div>
+                </div>
+              </td>
+              <td className="py-4 pr-4 align-top text-sm text-slate-400">
+                <div className="translate-y-px">
+                  {row.type ?? <span aria-hidden="true">&mdash;</span>}
                 </div>
               </td>
               <td className="hidden py-4 pr-4 align-top lg:table-cell">

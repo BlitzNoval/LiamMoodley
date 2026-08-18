@@ -1,4 +1,5 @@
 import { SectionHeading } from '../SectionHeading';
+import { HoverCascadeText } from '../HoverCascadeText';
 
 const linkClass = 'font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300';
 
@@ -13,7 +14,7 @@ export function About() {
       <div>
         <p className="mb-4">
           Hi there! I&rsquo;m Liam, and I like building things,{' '}
-          <span className="font-medium text-slate-200">with access for everyone at heart</span>.
+          <HoverCascadeText />.
           I&rsquo;m a developer and researcher with a particular interest in UI/UX, prototyping,
           full-stack development, AI and fintech. I enjoy working across both the technical and
           creative sides of projects, especially when there&rsquo;s a complicated problem to
@@ -23,7 +24,7 @@ export function About() {
           Currently, I&rsquo;m completing an{' '}
           <a
             className={linkClass}
-            href="https://www.wits.ac.za/"
+            href="https://gaiclab.co.za/profile/12"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="University of the Witwatersrand (opens in a new tab)"
