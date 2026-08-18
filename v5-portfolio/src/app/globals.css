@@ -75,11 +75,40 @@ html {
   will-change: transform, opacity;
 }
 
+.theme-orbit-disc {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(51 65 85 / 70%);
+  border-radius: 9999px;
+  background: rgb(15 23 42 / 70%);
+  box-shadow: 0 10px 15px -3px rgb(2 6 23 / 30%);
+  backdrop-filter: blur(8px);
+  transition:
+    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
+    border-color 200ms ease;
+  will-change: transform;
+}
+
+.theme-orbit-toggle:hover .theme-orbit-disc {
+  border-color: rgb(100 116 139 / 90%);
+}
+
+.theme-orbit-moon-disc {
+  transform: rotate(0deg);
+}
+
+.theme-orbit-sun-disc {
+  transform: rotate(360deg);
+}
+
 .theme-orbit-moon {
   opacity: 1;
   transform: rotate(0deg);
   transition:
-    transform 800ms cubic-bezier(0.65, 0, 0.35, 1),
+    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
     opacity 140ms ease 80ms;
 }
 
@@ -87,24 +116,32 @@ html {
   opacity: 0;
   transform: rotate(180deg);
   transition:
-    transform 800ms cubic-bezier(0.65, 0, 0.35, 1),
-    opacity 140ms ease 620ms;
+    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 140ms ease 840ms;
 }
 
 .theme-orbit-toggle.is-sun .theme-orbit-moon {
   opacity: 0;
   transform: rotate(-180deg);
   transition:
-    transform 800ms cubic-bezier(0.65, 0, 0.35, 1),
-    opacity 140ms ease 620ms;
+    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 140ms ease 840ms;
 }
 
 .theme-orbit-toggle.is-sun .theme-orbit-sun {
   opacity: 1;
   transform: rotate(0deg);
   transition:
-    transform 800ms cubic-bezier(0.65, 0, 0.35, 1),
+    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
     opacity 140ms ease 80ms;
+}
+
+.theme-orbit-toggle.is-sun .theme-orbit-moon-disc {
+  transform: rotate(-360deg);
+}
+
+.theme-orbit-toggle.is-sun .theme-orbit-sun-disc {
+  transform: rotate(0deg);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -112,5 +149,11 @@ html {
   .theme-orbit-toggle.is-sun .theme-orbit-icon {
     transform: none;
     transition: opacity 150ms ease;
+  }
+
+  .theme-orbit-disc,
+  .theme-orbit-toggle.is-sun .theme-orbit-disc {
+    transform: none;
+    transition: border-color 150ms ease;
   }
 }
