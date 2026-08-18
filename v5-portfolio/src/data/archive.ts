@@ -12,6 +12,7 @@ export const archive: Archived[] = [
   {
     year: '2026',
     title: 'Buquoy Chiropractic',
+    type: 'Website',
     tech: ['Web Design', 'Development', 'Healthcare'],
     href: 'https://www.buquoy.co.za/',
     linkLabel: 'buquoy.co.za',
@@ -19,6 +20,7 @@ export const archive: Archived[] = [
   {
     year: '2025',
     title: 'Fractional Marketing Agency',
+    type: 'Website',
     tech: ['Web Development', 'SEO', 'Marketing'],
     href: 'https://www.fractionalagency.co.za/',
     linkLabel: 'fractionalagency.co.za',
@@ -26,6 +28,7 @@ export const archive: Archived[] = [
   {
     year: '2024',
     title: 'Africa Matters Initiative',
+    type: 'Website',
     tech: ['Web Design', 'Development', 'Youth Development'],
     href: 'https://www.africamattersinitiative.com/',
     linkLabel: 'africamattersinitiative.com',
@@ -33,6 +36,7 @@ export const archive: Archived[] = [
   {
     year: '2024',
     title: 'CROW Wildlife',
+    type: 'Website',
     tech: ['UI/UX', 'Web Design', 'Conservation'],
     href: 'https://crowkzn.co.za/',
     linkLabel: 'crowkzn.co.za',
@@ -58,7 +62,7 @@ export const archive: Archived[] = [
     title: 'Buquoy',
     type: 'Brand Book',
     tech: ['Brand Design', 'Identity', 'Typography', 'UX'],
-    href: '/buquoy-brand-guide.pdf',
+    href: '/Buquoy-Brand-Guide-Web-Optimized.pdf',
     linkLabel: 'Brand Guide (PDF)',
   },
   {

@@ -27,13 +27,13 @@ export const projects: Project[] = [
   },
   {
     title: 'Buquoy — Brand Book',
-    href: '/buquoy-brand-guide.pdf',
+    href: '/Buquoy-Brand-Guide-Web-Optimized.pdf',
     description:
       'Full brand book for Buquoy: identity, typography system, colour palette, voice, and application guidelines.',
     image: '/images/projects/buquoy.png',
     imageAlt: 'Buquoy brand book cover',
     tech: ['Brand Design', 'Identity', 'Typography', 'UX'],
-    links: [{ label: 'Brand Guide (PDF)', href: '/buquoy-brand-guide.pdf' }],
+    links: [{ label: 'Brand Guide (PDF)', href: '/Buquoy-Brand-Guide-Web-Optimized.pdf' }],
   },
   {
     title: 'Skewed Lenses — GAI Dyslexia Detection',
