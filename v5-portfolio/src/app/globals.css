@@ -86,9 +86,7 @@ html {
   background: rgb(15 23 42 / 70%);
   box-shadow: 0 10px 15px -3px rgb(2 6 23 / 30%);
   backdrop-filter: blur(8px);
-  transition:
-    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
-    border-color 200ms ease;
+  transition: border-color 200ms ease;
   will-change: transform;
 }
 
@@ -107,53 +105,102 @@ html {
 .theme-orbit-moon {
   opacity: 1;
   transform: rotate(0deg);
-  transition:
-    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
-    opacity 140ms ease 80ms;
 }
 
 .theme-orbit-sun {
   opacity: 0;
   transform: rotate(180deg);
-  transition:
-    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
-    opacity 140ms ease 840ms;
 }
 
 .theme-orbit-toggle.is-sun .theme-orbit-moon {
   opacity: 0;
-  transform: rotate(-180deg);
-  transition:
-    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
-    opacity 140ms ease 840ms;
+  transform: rotate(180deg);
 }
 
 .theme-orbit-toggle.is-sun .theme-orbit-sun {
   opacity: 1;
   transform: rotate(0deg);
-  transition:
-    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1),
-    opacity 140ms ease 80ms;
 }
 
 .theme-orbit-toggle.is-sun .theme-orbit-moon-disc {
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
 }
 
 .theme-orbit-toggle.is-sun .theme-orbit-sun-disc {
   transform: rotate(0deg);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .theme-orbit-icon,
-  .theme-orbit-toggle.is-sun .theme-orbit-icon {
-    transform: none;
-    transition: opacity 150ms ease;
+@keyframes celestial-set-west {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
   }
+  84% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+}
 
-  .theme-orbit-disc,
-  .theme-orbit-toggle.is-sun .theme-orbit-disc {
-    transform: none;
-    transition: border-color 150ms ease;
+@keyframes celestial-rise-east {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  16% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes celestial-spin-out {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes celestial-spin-in {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.theme-orbit-toggle.orbit-to-sun .theme-orbit-moon,
+.theme-orbit-toggle.orbit-to-moon .theme-orbit-sun {
+  animation: celestial-set-west 1000ms cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.theme-orbit-toggle.orbit-to-sun .theme-orbit-sun,
+.theme-orbit-toggle.orbit-to-moon .theme-orbit-moon {
+  animation: celestial-rise-east 1000ms cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.theme-orbit-toggle.orbit-to-sun .theme-orbit-moon-disc,
+.theme-orbit-toggle.orbit-to-moon .theme-orbit-sun-disc {
+  animation: celestial-spin-out 1000ms cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.theme-orbit-toggle.orbit-to-sun .theme-orbit-sun-disc,
+.theme-orbit-toggle.orbit-to-moon .theme-orbit-moon-disc {
+  animation: celestial-spin-in 1000ms cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-orbit-toggle.orbit-to-sun .theme-orbit-icon,
+  .theme-orbit-toggle.orbit-to-moon .theme-orbit-icon,
+  .theme-orbit-toggle.orbit-to-sun .theme-orbit-disc,
+  .theme-orbit-toggle.orbit-to-moon .theme-orbit-disc {
+    animation-duration: 1ms;
   }
 }
