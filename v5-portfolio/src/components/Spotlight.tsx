@@ -17,7 +17,7 @@ export function Spotlight() {
       raf = 0;
       const el = ref.current;
       if (!el) return;
-      el.style.background = `radial-gradient(600px circle at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+      el.style.background = `radial-gradient(600px circle at ${x}px ${y}px, rgb(var(--spotlight-color) / var(--spotlight-opacity)), transparent 80%)`;
     };
 
     const schedule = () => {
@@ -51,7 +51,7 @@ export function Spotlight() {
       className="pointer-events-none fixed inset-0 z-30 transition duration-300"
       style={{
         background:
-          'radial-gradient(600px circle at 0px 0px, rgba(29, 78, 216, 0.15), transparent 80%)',
+          'radial-gradient(600px circle at 0px 0px, rgb(var(--spotlight-color) / var(--spotlight-opacity)), transparent 80%)',
       }}
     />
   );

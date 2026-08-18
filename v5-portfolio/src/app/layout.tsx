@@ -8,6 +8,17 @@ import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 
+const themeBootstrap = `
+  (function () {
+    try {
+      var savedTheme = window.localStorage.getItem('liam-moodley-theme');
+      document.documentElement.dataset.theme = savedTheme === 'light' ? 'light' : 'dark';
+    } catch (error) {
+      document.documentElement.dataset.theme = 'dark';
+    }
+  })();
+`;
+
 export const metadata: Metadata = {
   title: site.name,
   description: site.description,
@@ -33,7 +44,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`scroll-smooth ${inter.variable}`}>
+    <html
+      lang="en"
+      className={`scroll-smooth ${inter.variable}`}
+      data-theme="dark"
+      suppressHydrationWarning
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
+      </head>
       <body className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
         <div className="group/spotlight relative">
           <Spotlight />
