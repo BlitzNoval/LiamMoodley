@@ -34,19 +34,29 @@ html {
     text-shadow: none;
   }
   42% {
-    color: #f87171;
+    color: var(--letter-cascade-color);
     transform: translateY(-0.3em);
-    text-shadow: 0 0 0.5rem rgb(248 113 113 / 45%);
+    text-shadow: 0 0 0.5rem var(--letter-cascade-glow);
   }
 }
 
-.access-cascade:hover .access-cascade-letter {
+.letter-cascade--red {
+  --letter-cascade-color: #f87171;
+  --letter-cascade-glow: rgb(248 113 113 / 45%);
+}
+
+.letter-cascade--blue {
+  --letter-cascade-color: #60a5fa;
+  --letter-cascade-glow: rgb(96 165 250 / 45%);
+}
+
+.letter-cascade:hover .letter-cascade-letter {
   animation: access-letter-wave 420ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .access-cascade:hover .access-cascade-letter {
+  .letter-cascade:hover .letter-cascade-letter {
     animation: none;
-    color: #f87171;
+    color: var(--letter-cascade-color);
   }
 }

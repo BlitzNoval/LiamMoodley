@@ -37,7 +37,7 @@ export function About() {
           technical ideas clearly rather than just make them work.
         </p>
         <p className="mb-4">
-          I also run <span className="font-medium text-slate-200">NIAEXE</span>, my interactive
+          I also run <HoverCascadeText text="NIAEXE Interactive" tone="blue" />, my interactive
           digital company, where I work across UI/UX, prototyping and full-stack development to
           build websites and digital experiences. Through NIAEXE, I&rsquo;ve designed, built and
           managed digital platforms for organisations across healthcare, marketing, conservation
