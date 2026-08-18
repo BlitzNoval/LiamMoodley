@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { site } from '@/data/site';
 import { Spotlight } from '@/components/Spotlight';
 import { StatusBar } from '@/components/StatusBar';
+import { ThemeOrbitToggle } from '@/components/ThemeOrbitToggle';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="group/spotlight relative">
           <Spotlight />
           <StatusBar />
+          <ThemeOrbitToggle />
           <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
             <a
               href="#content"

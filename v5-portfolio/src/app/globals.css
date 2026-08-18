@@ -60,3 +60,57 @@ html {
     color: var(--letter-cascade-color);
   }
 }
+
+.theme-orbit-toggle {
+  overflow: visible;
+}
+
+.theme-orbit-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: 50% calc(100% + 22px);
+  will-change: transform, opacity;
+}
+
+.theme-orbit-moon {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition:
+    transform 800ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 140ms ease 80ms;
+}
+
+.theme-orbit-sun {
+  opacity: 0;
+  transform: rotate(180deg);
+  transition:
+    transform 800ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 140ms ease 620ms;
+}
+
+.theme-orbit-toggle.is-sun .theme-orbit-moon {
+  opacity: 0;
+  transform: rotate(-180deg);
+  transition:
+    transform 800ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 140ms ease 620ms;
+}
+
+.theme-orbit-toggle.is-sun .theme-orbit-sun {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition:
+    transform 800ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 140ms ease 80ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-orbit-icon,
+  .theme-orbit-toggle.is-sun .theme-orbit-icon {
+    transform: none;
+    transition: opacity 150ms ease;
+  }
+}
